@@ -55,5 +55,5 @@ body:
   - type: markdown
     attributes:
       label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      value: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
      

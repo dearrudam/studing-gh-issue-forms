@@ -7,6 +7,8 @@ body:
     attributes:
       value: |
         Please provide all the information requested. Issues that do not follow this format are likely to stall.
+        
+        Please test using the latest POM Editor Maven Plugin release to make sure your issue has not already been fixed: https://github.com/soujava/pom-editor-maven-plugin/releases 
   - type: textarea
     id: description
     attributes:
@@ -14,29 +16,8 @@ body:
       description: |
         Please provide a clear and concise description of what the bug is. 
         Include screenshots if needed.
-        Please test using the latest Beagle release to make sure your issue has not already been fixed: https://github.com/arrudalabs/pom-editor-maven-plugin/releases 
-      # placeholder: ex. email@example.com
     validations:
       required: true
-  - type: textarea
-    id: steps-to-produce
-    attributes:
-      label: Steps To Reproduce
-      description: |
-        Provide a detailed list of steps that reproduce the issue.
-      placeholder: |
-          1.
-          2.
-    validations:
-      required: true
-  - type: textarea
-    id: expected-results
-    attributes:
-      label: Expected Results
-      description: |
-        Describe what you expected to happen.
-    validations:
-      required: false
   - type: textarea
     id: evidences
     attributes:
@@ -45,16 +26,48 @@ body:
         Please provide a link to a repository on GitHub, or provide a minimal code example that reproduces the problem.
         You may provide a screenshot of the application if you think it is relevant to your bug report.
         Here are some tips for providing a minimal example: https://stackoverflow.com/help/mcve
+    validations:
+      required: true
   - type: textarea
     id: logs
     attributes:
       label: Relevant log output
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
       render: shell
+   
+  - type: textarea
+    id: steps-to-produce
+    attributes:
+      label: Steps To Reproduce
+      description: |
+        Please, provide a detailed list of steps that reproduce the issue.
+      placeholder: |
+          1.
+          2.
+    validations:
+      required: false
+      
+  - type: textarea
+    id: expected-results
+    attributes:
+      label: Expected Results
+      description: |
+        Describe what you expected to happen.
+    validations:
+      required: false
+      
+  - type: textarea
+    id: solution-ideas
+    attributes:
+      label: Any idea for solving this issue?
+      description: |
+        Please, share with us your ideas for solving this issue if you have any! 
+    validations:
+      required: false   
       
   - type: markdown
     attributes:
       value: |
-        ## Code of Conduct
+        ### Code of Conduct
         By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
      

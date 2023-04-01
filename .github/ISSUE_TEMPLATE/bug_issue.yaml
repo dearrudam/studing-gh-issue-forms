@@ -21,20 +21,14 @@ body:
   - type: textarea
     id: evidences
     attributes:
-      label: Code example, screenshot, or link to a repository
+      label: Evidences
       description: |
-        Please provide a link to a repository on GitHub, or provide a minimal code example that reproduces the problem.
+        Please, provide a link to a repository on GitHub, or provide a minimal code example that reproduces the problem.
         You may provide a screenshot of the application if you think it is relevant to your bug report.
         Here are some tips for providing a minimal example: https://stackoverflow.com/help/mcve
     validations:
       required: true
-  - type: textarea
-    id: logs
-    attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
-   
+      
   - type: textarea
     id: steps-to-produce
     attributes:
@@ -45,7 +39,7 @@ body:
           1.
           2.
     validations:
-      required: false
+      required: true
       
   - type: textarea
     id: expected-results

@@ -1,6 +1,5 @@
 name: 🐛 Bug Report
 description: Report a reproducible bug
-title: "[Bug]: <PUT TITLE HERE>"
 labels: ["bug"]
 body:
   - type: markdown

@@ -7,7 +7,7 @@ body:
     attributes:
       value: |
         Please provide all the information requested. Issues that do not follow this format are likely to stall.
-  - type: input
+  - type: textarea
     id: description
     attributes:
       label: Description
@@ -19,45 +19,41 @@ body:
     validations:
       required: true
   - type: textarea
-    id: what-happened
+    id: steps-to-produce
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: Steps To Reproduce
+      description: |
+        Provide a detailed list of steps that reproduce the issue.
+      placeholder: |
+          1.
+          2.
     validations:
       required: true
-  - type: dropdown
-    id: version
+  - type: textarea
+    id: expected-results
     attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
+      label: Expected Results
+      description: |
+        Describe what you expected to happen.
     validations:
-      required: true
-  - type: dropdown
-    id: browsers
+      required: false
+  - type: textarea
+    id: evidences
     attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
+      label: Code example, screenshot, or link to a repository
+      description: |
+        Please provide a link to a repository on GitHub, or provide a minimal code example that reproduces the problem.
+        You may provide a screenshot of the application if you think it is relevant to your bug report.
+        Here are some tips for providing a minimal example: https://stackoverflow.com/help/mcve
   - type: textarea
     id: logs
     attributes:
       label: Relevant log output
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
       render: shell
-  - type: checkboxes
-    id: terms
+      
+  - type: markdown
     attributes:
       label: Code of Conduct
       description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
+     

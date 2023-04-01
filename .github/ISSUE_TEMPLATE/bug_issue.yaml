@@ -51,7 +51,7 @@ body:
     attributes:
       label: Any idea for solving this issue?
       description: |
-        Please, share with us your ideas for solving this issue if you have any! 
+        Please, share with us your ideas for solving this issue if you have any.
     validations:
       required: false   
       

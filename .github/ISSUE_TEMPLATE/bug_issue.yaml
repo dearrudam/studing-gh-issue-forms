@@ -1,5 +1,5 @@
-name: 🐛 Bug Report Sample
-description: It's a sample for report a reproducible bug using GH Issue Forms.
+name: 🐛 Bug Report
+description: Report a reproducible bug
 title: "[Bug]: "
 labels: ["bug"]
 body:

@@ -1,5 +1,5 @@
 name: Goal Request 
-title: [Goal Request]: 
+title: '[Goal Request]: '
 description: Open a goal request for this plugin
 labels: ["enhancement"]
 body:

@@ -1,0 +1,43 @@
+name: Goal Request 
+title: [Goal Request]: 
+description: Open a goal request for this plugin
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please provide all the required information requested. Goal requests that do not follow this format are likely to stall.
+
+  - type: textarea
+    id: purpose-goal
+    attributes:
+      label: What is the purpose of the new goal?
+      description: |
+        Please provide a clear and concise purpose for the goal that you're requesting. 
+        Feel free to Include screenshots if needed.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior-and-output
+    attributes:
+      label: What is the expected behavior and output of the new goal?
+      description: |
+        Please provide the goal syntax, the expected behavior, and the expected output for the goal that you're requesting. 
+        Feel free to Include screenshots if needed.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior-and-output
+    attributes:
+      label: What is the expected behavior and output of the new goal?
+      description: |
+        Please provide the following information:
+        - the goal syntax;
+        - the required inputs;
+        - the expected behavior;
+        - the expected output;
+        *PS:* Feel free to Include screenshots if needed.
+    validations:
+      required: true

@@ -1,7 +1,7 @@
 name: Goal Request 
 title: '[Goal Request]: '
 description: Open a goal request for this plugin
-labels: ["enhancement"]
+labels: ["enhancement","proposal","question","help wanted"]
 body:
   - type: markdown
     attributes:

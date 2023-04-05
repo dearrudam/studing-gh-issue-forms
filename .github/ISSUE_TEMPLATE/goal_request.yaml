@@ -23,11 +23,20 @@ body:
     attributes:
       label: What is the expected behavior and output of the new goal?
       description: |
-        Please provide the following information:
+        Please provide the following information (Feel free to Include screenshots if needed):
         - the goal syntax;
         - the required inputs;
         - the expected behavior;
         - the expected output;
-        *PS:* Feel free to Include screenshots if needed.
+      value: |
+        ### Given the pom:
+        ```xml
+        ```
+        ### When execute:
+        ```sh
+        mvn pom-editor:<new goal> [-DnewParams=?]
+        ```
+        ### Expected result:
+        Then it's expected to happen ....
     validations:
       required: true
